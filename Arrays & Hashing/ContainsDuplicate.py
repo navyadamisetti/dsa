@@ -6,6 +6,9 @@ class Solution:
                 if(i==j) & (i_index != j_index):
                     return True
         return False
+        
+    #brute force solution
+    #comparing each element with rest of the array
 
     def hasDuplicate(self, nums: List[int]) -> bool:
 
