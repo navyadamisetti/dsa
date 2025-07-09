@@ -1,12 +1,18 @@
-# Big O Notation
+# Big-O-Notation
 
 O(1) : Constant Time
-O(log n) : Logarithmic Time ---> ex: Binary Search
-O(n) : Linear Time ---> ex: Linear Search
-O(n log n) : Linearithmic Time
-O(n²) : Quadratic Time
-O(2^n) : Exponential Time
-O(n!) : Factorial Time
+
+O(log n) : Logarithmic Time ---> ex: Binary Search, BST, heap push pop
+
+O(n) : Linear Time ---> ex: Linear Search, iterate an array, sliding window
+
+O(n log n) : Linearithmic Time ---> ex: usual sort algorithms, Merge sort, heap sort
+
+O(n²) : Quadratic Time ---> ex: double iterate an array, square grid traverse, 
+
+O(2^n) : Exponential Time ---> ex: recursion, 2 branches tree of height n
+
+O(n!) : Factorial Time ---> ex: all permutations of an array, Few graph problems, Travelling sales man problem
 
 
 
