@@ -2,7 +2,7 @@ class Solution:
     def isAnagram_(self, s: str, t: str) -> bool:
         return sorted(s) == sorted(t)
         
-        #brute force solution
+        # brute force solution
         # we can sort & compare
         # but time complexity will be O(nlogn + mlogm)
         # space complexity will be O(1) or O(n+m)
