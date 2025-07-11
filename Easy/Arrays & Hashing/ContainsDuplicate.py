@@ -7,8 +7,8 @@ class Solution:
                     return True
         return False
         
-    #brute force solution
-    #comparing each element with rest of the array
+    # brute force solution
+    # comparing each element with rest of the array
 
     def hasDuplicate(self, nums: List[int]) -> bool:
 
@@ -19,6 +19,6 @@ class Solution:
             hashset.add(num)     #O(1)
         return False
 
-    #above solution has Time complexity of O(n)
+    # above solution has Time complexity of O(n)
 
         
