@@ -17,16 +17,17 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        countS, countT = {}, {}
+        countS, countT = {}, {}  #using a dict as I do lot of fetching & it retrieves in constant time
 
-        for i in range(len(s)):
-            countS[s[i]] = 1 + countS.get(s[i], 0)
+        for i in range(len(s)): #O(n)
+            countS[s[i]] = 1 + countS.get(s[i], 0) #O(1)
             countT[t[i]] = 1 + countT.get(t[i], 0)
-        for c in countS:
-            if countS[c] != countT.get(c,0):
+        for c in countS: #O(m), m<=n so worst case O(n)
+            if countS[c] != countT.get(c,0): #O(1)
                 return False
         return True
 
+        # O(n) + O(m) or O(n) + O(n) = O(2n) 
         # time complexity is O(n+m)
         # space complexity is O(1)
 
